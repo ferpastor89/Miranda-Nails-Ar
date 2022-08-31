@@ -1,0 +1,894 @@
+/* Aca definimos las Custom properties */
+:root {
+    --negro: #393939;
+    /* Tipografía */
+    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-secundaria: Verdana;
+  }
+  
+  /* Las adaptamos al modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --negro: #ececec;
+    }
+  }
+  /* Opcional */
+  /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+  /* Opcional */
+  /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      -webkit-animation: none !important;
+              animation: none !important;
+      -webkit-transition: none !important;
+      transition: none !important;
+    }
+  }
+  /* Reseteamos los margin y paddings de todas las etiquetas */
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+  }
+  
+  /*Evitamos problemas con las imagenes */
+  img, picture, video, iframe, figure {
+    max-width: 100%;
+    display: block;
+   
+  }
+  
+  /* Reseteamos los enlaces para funcionar como cajas... */
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+  }
+  
+  /* ... excepto los que se encuentran en párrafos */
+  p a {
+    display: inline;
+  }
+  
+  /* Quitamos los puntos de los <li> */
+  li {
+    list-style-type: none;
+  }
+  
+  /* Configuramos anclas suaves */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Desactivamos estilos por defecto de las principales etiquetas de texto */
+  h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Evitamos problemas con los pseudoelementos de quotes */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+  }
+  
+  /* Configuramos el texto que seleccionamos */
+  ::-moz-selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  ::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  
+  /* Nivelamos problemas de tipografías y colocación de formularios */
+  form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    /* opcional */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  
+  /* Reseteamos las tablas */
+  table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Evitamos problemas con los SVG */
+  svg {
+    width: initial;
+    display: inline;
+    fill: currentColor;
+  }
+  
+  /* (Probándolo, no usar en producción) En el caso de añadir una  */
+  /* p svg{
+    display: inline;
+    width: initial;
+  } */
+  /* Configuramos la tipografía para toda la web */
+  body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--negro);
+    /* opcional */
+    line-height: 1.4em;
+    /* opcional */
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    /* opcional */
+    font-smooth: always;
+    /* opcional */
+    -webkit-font-smoothing: antialiased;
+    /* opcional */
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .linedivider{
+    width:75%;
+    margin: 0 auto;
+    min-height: 0.2rem;
+    border: none;
+    background:linear-gradient(to right, #8576a8, #2f098a, #86098a);
+    margin-bottom: 4em;
+  }
+
+  .lineitem{
+    width: 70%;
+    margin-left: 0;
+    min-height: 0.02rem;
+    border: none;
+    background: #dfd7d7;
+  }
+  
+
+
+/*Comienzo de código*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+
+body{
+    background: rgb(240, 242, 247) none repeat scroll 0% 0%;
+}
+
+
+.hero__title-h1{
+    margin-bottom: .6rem;
+    font-family:'Bodoni Moda', serif;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    color: #dfd7d7;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.hero__title-h2{
+    padding-top: 0;
+    margin-bottom: 1.4rem;
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    color: #83ccd1;
+
+}
+
+.logo{
+    width: 45%;
+    margin-bottom: 9px;
+}
+
+.logo__img{
+    
+}
+
+.header{ 
+    max-height: 9.5vh;
+    position: relative; 
+    z-index: 2;
+
+    background: #dfd7d7;
+    padding: 1rem;
+    padding-bottom:0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.svg{
+    width:2em ;
+    min-height: 2.3em;
+    color:#2f098a;
+    line-height: 2px;
+    padding-bottom: .7rem;
+}
+
+.dropdownmenu{
+    width: 100%;
+}
+
+.dropdownmenu__navlist{
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownmenu__navlist__nav--item{
+    margin:1rem 0;
+}
+
+.dropdownmenu__navlist__nav--link{
+    display: flex;
+    justify-content:center;
+    color: rgb(187, 179, 179);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+
+.buttonmenu{
+    display: flex;
+    flex-direction:row-reverse;
+    background-color: rgb(201, 197, 197);
+
+    border-radius: 6px;
+    padding: 4px;
+    max-height: 2rem;
+    margin-bottom: 16px;
+}
+
+.buttonmenu p{
+    font-size: 0.9rem;
+    color: #2f098a;
+    padding-top: 4px;
+    padding-right: 1.5px;
+    padding-left: 2.5px;
+}
+
+.active{
+    display: flex;
+    min-height: 70vh;
+    pointer-events: auto;
+    position: absolute;
+    z-index:1;
+    align-items:baseline;
+    justify-content:baseline;
+    transition: 1s ease;
+    width: 62vw;
+    left: 0%;
+    top: 100%;
+    padding-top: 2em;
+    padding-left: 1em;
+    background:#431757;
+    border-bottom: .25px solid #b8b4b4;     
+    border-right: .25px solid  #b8b4b4;
+    border-radius:0px 0px 20px 0px;
+    color:#dfd7d7;
+}
+
+.dropdownmenu__icons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.dropdownmenu__icons a{
+    font-size: 2.3rem;
+    padding-right: 2rem;
+}
+
+
+            /*HERO*/
+
+#hero{
+    padding: 0 3.125rem;
+    background-image: url(/img/hero2-jpg.jpg); 
+    min-height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+#hero::before{
+    content: '';
+    background: rgba(60, 60, 85, 0.4);
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    left: 0%;
+}
+
+.hero__content{
+    position: relative;
+    color: #fff;
+    min-height: 100%;
+    display: flex;
+    padding-top: 3rem;
+    
+}
+
+.hero__title{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-left: 0;
+}
+
+.shift__button-hero{
+    display: inline;
+    position: relative;
+    font-size: .9rem;
+    font-weight: 400;
+    color: #faf3f3;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.9375rem 1.25rem;
+    border-radius: 30px;
+    border: 1px solid rgba(247, 242, 242, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #9b31cc;
+    transition: all 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+            /*SOCIAL PROOF*/
+
+.social-proof{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.social-proof__text{
+    font-family:'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .7px;
+    color: #323235;
+    width: 80vw;
+    text-align: center;
+}
+
+.quotes{
+    font-size: 1.5615rem;
+    color:#393939;
+}
+
+        /*PHOTO GALLERY*/
+
+#gallery-slider{
+    min-height: 70vh;
+    max-width: 50em;
+    width: 100%;
+}
+
+
+#gallery-slider ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+#gallery-slider > ul.slider{
+    position: relative;
+    min-height:60vh;
+    max-width:50em;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#slide4 h3{
+    margin-top: 10em;
+}
+
+#gallery-slider > ul.slider h3{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+    color: #525050;
+    text-transform: uppercase;
+    padding: .7em;
+    border-radius: 4px;
+    left: 50%;
+    top: 6.25em;
+    transform: translate(-50%, -50%);
+}
+
+#gallery-slider > ul.slider li{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 2s;
+    background: #fff;
+    border-radius:.5rem;
+}
+
+
+#gallery-slider > ul.slider li img{
+    width:100%;
+    max-height: 70vh;
+    object-fit:cover;
+    border-radius:.5rem;
+    border:1px solid rgb(79, 95, 146);
+}
+
+.slider__title-box-h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+    color:#6b6565;
+    display: inline;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.see-more{
+    display:flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #4b979e;
+    padding:.3em .8em;
+    padding-top: 1.5rem;
+    margin-bottom: 3em;
+}
+
+#gallery-slider > ul.slider li:first-child{
+    opacity: 1;
+}
+
+#gallery-slider > ul.slider li:target{
+    opacity: 1;
+}
+
+#gallery-slider > .menu-slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+#gallery-slider > .menu-slider li{
+    margin-right: 1.5em;
+    width: 1px;
+    height: 1px;
+}
+
+
+#gallery-slider > .menu-slider li a{
+    display:inline-block;
+    text-decoration: none;
+    background-color:#faf3f3;
+    border-radius: 50%;
+    border: 0.8px solid #212025;
+    padding: 0.3rem;
+}
+
+#gallery-slider > .menu-slider li a:hover{
+    background-color:#c6cfd3;
+}
+
+
+        /*Prices/Promos/Payment methods*/
+
+#prices{
+    background: url("img/backgroundPrices.jpg.jpg");
+    background-size: cover;
+    backdrop-filter:blur(.4rem);
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+
+.prices__card{
+    min-height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 1rem;
+    border: .1rem solid rgb(205, 216, 219);
+    box-shadow: 0 1rem 1rem rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur (1rem);
+    background-color: rgba(255, 255, 255, 0.060);
+    color:#dfd7d7;
+}
+
+.prices__card h2{
+    color: #e7b0a2;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-size: 1.5rem;
+    font-family:'Inter', sans-serif;
+}
+
+.prices__card ul{
+    padding: 1em;
+    padding-top: .5em;
+}
+
+.prices__card ul li{
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.prices__card h4{
+    font-size: .7rem;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+
+.prices__promos-card{
+    min-height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    border-radius: 1rem;
+    border: .1rem solid rgb(205, 216, 219);
+    box-shadow: 0 1rem 1rem rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur (1rem);
+    background-color: rgba(255, 255, 255, 0.060);
+    color:#dfd7d7;
+}
+
+.prices__promos-card h2{
+    color: #e7b0a2;
+    padding-top: 1em;
+    font-size: 1.5rem;
+    font-family:'Inter', sans-serif;
+}
+
+.prices__promos-card ul{
+    padding: 1em;
+    padding-top: 1em;
+}
+
+
+.prices__promos-card ul li{
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.prices__promos-card h4{
+    font-size: .7rem;
+    padding-top: 5em;
+    padding-left: 2.6em;
+}
+
+
+.prices__payment-methods{
+    min-height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: .1rem solid rgb(205, 216, 219);
+    box-shadow: 0 1rem 1rem rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur (1rem);
+    background-color: rgba(255, 255, 255, 0.060);
+    color:#dfd7d7;
+}
+
+.prices__payment-methods h2{
+    color: #e7b0a2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5rem;
+    font-family:'Inter', sans-serif;
+}
+
+.prices__payment-methods ul{
+    margin-top: 1rem;
+}
+
+.prices__payment-methods li{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.prices__payment-methods--button{
+    font-size: 1em;
+    padding: 1rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2.1rem;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(200, 200, 200, 0.3);
+    color:#fff;
+    background-color: rgb(2, 128, 247);
+}
+
+.prices__payment-methods h4{
+    margin-top: 4em;
+    font-size: .7rem;
+    padding-left: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*ABOUT ME*/
+
+.aboutMe{
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 100%;
+    background-image:url(/img/backgroundAboutme.jpg.jpg);
+    background-size: cover;
+}
+
+.aboutMe__title{
+    padding-left: 1rem;
+    padding-top: 1.5em;
+    padding-bottom: 1.1em;
+    font-size: 2.3rem;
+    font-family:'Roboto', sans-serif;
+    color: #726a6a;
+    margin-top: 2em;
+    letter-spacing: 1.5px;
+}
+
+.aboutMe__text{
+    width: 70%;
+    padding-left: 3em;
+    font-family: 'Inter', sans-serif;
+    color:#5f5e63;;
+    font-size: 1.2rem;
+    letter-spacing: 1.4px;
+    line-height: 1.9rem;
+    padding-left: 1rem;
+    padding-bottom: 2.5em;
+}
+
+.shift__button-aboutMe{
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 7em;
+    margin-bottom: 4em;
+    position: relative;
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+    color: #faf3f3;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:0.9375rem 1.25rem;
+    border-radius: 30px;
+    border: 1px solid rgba(247, 242, 242, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #9b31cc;
+    transition: all 0.4s;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    background: #323235;
+    min-height: 45vh;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#contact{
+    width: 100%;
+    font-weight: bold;
+    min-height: 40vh;
+
+}
+
+.contact__title{
+    font-family:'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color:#ffff;
+    padding-top: 2em;
+}
+
+.container-icons{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:1.5em;
+    font-size: 2.9rem;
+    color:rgb(52, 52, 177);
+    margin-bottom: 1em;
+}
+
+.fa-instagram{
+    background:linear-gradient(#515BD4, #8134af, #DD2A7B, #FEDA77, #F58529);
+    color: white;
+    border-radius: 30%;
+    border: 1px solid white;
+    
+}
+
+.fa-whatsapp{
+   background-color: rgb(49, 182, 49);
+   color: white;
+   border-radius: 60%;
+   border: 1px solid white;
+}
+
+.fa-facebook{
+   background-color: rgb(42, 100, 209);
+   color: white;
+   border-radius: 40%;
+   border: 1px solid white;
+}
+
+.copyright{
+    width: 100%;
+    min-height: 10vh;
+    margin-bottom: .5em;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+
+.copyright__text{
+    font-size: 1rem;
+    padding-left: 1.5em;
+    color: #c7c2c2;
+}
+
+.poweredBy{
+    font-size:.7rem ;
+    padding-right: 2.5em;
+    color: #c0bbbb
+}
+
+
+
+.wavedivider {
+    position: absolute;
+    top:107%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavedivider svg {
+    position: relative;
+    display: block;
+    width: calc(227% + 1.3px);
+    height: 163px;
+}
+
+.wavedivider .shape-fill {
+    fill:rgb(240, 242, 247);
+}
+
+
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wavedivider svg {
+        width: calc(142% + 1.3px);
+        height: 95px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(min-width:600px){
+    
+
+    }
+
+    
+
