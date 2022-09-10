@@ -152,7 +152,7 @@
 
 
 body{
-    background: rgb(240, 242, 247) none repeat scroll 0% 0%;
+    background: rgb(240, 242, 247);
 }
 
 
@@ -191,7 +191,6 @@ body{
     max-height: 9.5vh;
     position: relative; 
     z-index: 2;
-
     background: #dfd7d7;
     padding: 1rem;
     padding-bottom:0;
@@ -264,7 +263,7 @@ body{
     z-index:1;
     align-items:baseline;
     justify-content:baseline;
-    transition: 1s ease;
+    transition: .5s ease;
     width: 62vw;
     left: 0%;
     top: 100%;
@@ -304,7 +303,7 @@ body{
 
 #hero{
     padding: 0 3.125rem;
-    background-image: url(/img/hero2-jpg.jpg); 
+    background: url(/img/hero2-jpg.jpg) fixed no-repeat 50% 50%; 
     min-height: 100vh;
     background-size:cover;
     background-position: center;
@@ -313,6 +312,7 @@ body{
 #hero::before{
     content: '';
     background: rgba(60, 60, 85, 0.4);
+    background-size: cover;
     position: absolute;
     width: 100%;
     min-height: 100vh;
@@ -375,6 +375,7 @@ body{
             /*SOCIAL PROOF*/
 
 .social-proof{
+    background: rgb(240, 242, 247) fixed no-repeat 50% 50%;
     display: flex;
     align-items: center;
     min-height: 80vh;
@@ -412,9 +413,12 @@ body{
         /*PHOTO GALLERY*/
 
 #gallery-slider{
+    background: rgb(223, 225, 231);
     min-height: 70vh;
     max-width: 50em;
     width: 100%;
+    padding-bottom: 1.2rem;
+    padding-top: 3rem;
 }
 
 
@@ -481,7 +485,7 @@ body{
     color:#6b6565;
     display: inline;
     padding-left: 1em;
-    padding-top: 1em;
+    padding-top: 5em;
 }
 
 .see-more{
@@ -533,10 +537,10 @@ body{
         /*Prices/Promos/Payment methods*/
 
 #prices{
-    background: url("img/backgroundPrices.jpg.jpg");
+    background: url("img/backgroundPrices.jpg.jpg") ;
     background-size: cover;
     backdrop-filter:blur(.4rem);
-    min-height: 100vh;
+    min-height: 80vh;
     display: block;
     justify-content: center;
     align-items: center;
@@ -683,26 +687,11 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             /*ABOUT ME*/
 
 #aboutMe{
-    margin: 0 auto;
     width: 100%;
-    background-image:url(/img/backgroundAboutme.jpg.jpg);
+    background:url(/img/backgroundAboutme.jpg.jpg);
     background-size: cover;
 }
 
@@ -813,25 +802,30 @@ footer{
 .copyright{
     width: 100%;
     min-height: 10vh;
-    margin-bottom: .5em;
     display: flex;
-    justify-content:space-around;
-    align-items: flex-end;
+    align-items: center;
 }
 
-.copyright__text{
+.copyright__brand{
     font-size: .8rem;
-    padding-left: 1em;
+    padding-left: 1.5rem;
     color: #c7c2c2;
+    line-height:.7rem;
+    padding-top: 1rem;
+}
+
+.copyright__brand span{
+    font-size: .5rem;
+    color: #c0bbbb;
+    padding-left:1.3rem;
 }
 
 .poweredBy{
-    font-size:.6rem ;
-    padding-right: 1em;
-    color: #c0bbbb
+    font-size:.5rem ;
+    color: #c0bbbb;
+    padding-left: 4rem;
+    padding-top: .3rem;
 }
-
-
 
 
 
