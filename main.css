@@ -296,7 +296,7 @@ body{
     min-height: 0.02rem;
     border: none;
     background: #dfd7d7;
-  }
+}
 
 
             /*HERO*/
@@ -311,7 +311,7 @@ body{
 
 #hero::before{
     content: '';
-    background: rgba(60, 60, 85, 0.4);
+    background: rgba(60, 60, 85, 0.4)fixed no-repeat 50% 50%;
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -375,7 +375,7 @@ body{
             /*SOCIAL PROOF*/
 
 .social-proof{
-    background: rgb(240, 242, 247) fixed no-repeat 50% 50%;
+    background: rgb(240, 242, 247);
     display: flex;
     align-items: center;
     min-height: 80vh;
@@ -406,9 +406,9 @@ body{
     border: none;
     background:linear-gradient(to right, #8576a8, #2f098a, #86098a);
     margin-bottom: 4em;
-  }
+}
 
-  
+
 
         /*PHOTO GALLERY*/
 
@@ -441,6 +441,9 @@ body{
 }
 
 #slide4 h3{
+    margin-top: 10em;
+}
+#slide6 h3{
     margin-top: 10em;
 }
 
@@ -517,6 +520,7 @@ body{
     margin-right: 1.5em;
     width: 1px;
     height: 1px;
+    margin-top: 1.5rem;
 }
 
 
@@ -591,7 +595,6 @@ body{
 .prices__card h4{
     font-size: .7rem;
     padding-left: 3em;
-    padding-bottom: 1em;
 }
 
 .prices__promos-card{
@@ -774,7 +777,7 @@ footer{
     padding-top:1.5em;
     font-size: 2.9rem;
     color:rgb(52, 52, 177);
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 
 .fa-instagram{
@@ -786,17 +789,17 @@ footer{
 }
 
 .fa-whatsapp{
-   background-color: rgb(49, 182, 49);
-   color: white;
-   border-radius: 60%;
-   border: 1px solid white;
+    background-color: rgb(49, 182, 49);
+    color: white;
+    border-radius: 60%;
+    border: 1px solid white;
 }
 
 .fa-facebook{
-   background-color: rgb(42, 100, 209);
-   color: white;
-   border-radius: 40%;
-   border: 1px solid white;
+    background-color: rgb(42, 100, 209);
+    color: white;
+    border-radius: 40%;
+    border: 1px solid white;
 }
 
 .copyright{
@@ -807,24 +810,24 @@ footer{
 }
 
 .copyright__brand{
-    font-size: .8rem;
+    font-size: .65rem;
     padding-left: 1.5rem;
     color: #c7c2c2;
     line-height:.7rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .copyright__brand span{
-    font-size: .5rem;
+    font-size: .4rem;
     color: #c0bbbb;
-    padding-left:1.3rem;
+    padding-left:1rem;
 }
 
 .poweredBy{
     font-size:.5rem ;
     color: #c0bbbb;
-    padding-left: 4rem;
-    padding-top: .3rem;
+    padding-left: 5.8rem;
+    padding-top: 1.8rem;
 }
 
 
