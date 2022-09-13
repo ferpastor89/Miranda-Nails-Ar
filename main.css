@@ -485,7 +485,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1.6rem;
-    color:#6b6565;
+    color:#5a5656;
     display: inline;
     padding-left: 1em;
     padding-top: 5em;
@@ -692,6 +692,8 @@ body{
 
             /*ABOUT ME*/
 
+
+
 #aboutMe{
     width: 100%;
     background:url(/img/backgroundAboutme.jpg.jpg);
@@ -700,12 +702,11 @@ body{
 
 .aboutMe__title{
     padding-left: 1rem;
-    padding-top: 1.5em;
+    padding-top: 2.5em;
     padding-bottom: 1.1em;
     font-size: 2.3rem;
     font-family:'Roboto', sans-serif;
     color: #726a6a;
-    margin-top: 2em;
     letter-spacing: 1.5px;
 }
 
