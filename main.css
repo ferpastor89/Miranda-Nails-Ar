@@ -153,6 +153,7 @@
 
 body{
     background: rgb(240, 242, 247);
+    
 }
 
 
@@ -180,20 +181,21 @@ body{
 
 .logo{
     width: 45%;
-    margin-bottom: 9px;
+    padding-top: 0;
 }
 
 .logo__img{
-    
+   margin-bottom: 1rem; 
 }
+            /*MENU MOBILE*/
 
 .header{ 
-    max-height: 9.5vh;
     position: relative; 
     z-index: 2;
     background: #dfd7d7;
     padding: 1rem;
     padding-bottom:0;
+    margin-top: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -209,7 +211,7 @@ body{
     padding-bottom: .7rem;
 }
 
-.dropdownmenu{
+.menu{
     width: 100%;
 }
 
@@ -220,6 +222,12 @@ body{
     
     display: flex;
     flex-direction: column;
+}
+
+#closedropdownmenu{
+    position: absolute;
+    top: 5%;
+    right:10%
 }
 
 .dropdownmenu__navlist__nav--item{
@@ -233,8 +241,6 @@ body{
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
 }
-
-
 
 .buttonmenu{
     display: flex;
@@ -276,6 +282,14 @@ body{
     color:#dfd7d7;
 }
 
+.dropdownmenu__navlist__nav--item:first-child{
+    display: flex;
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    font-size: 1.2rem;
+}
+
 .dropdownmenu__icons{
     width: 50%;
     display: flex;
@@ -297,6 +311,21 @@ body{
     border: none;
     background: #dfd7d7;
 }
+
+            /*MENU DESKTOP*/
+
+.desktopmenu{
+    display: none;
+    flex-direction: row;
+    justify-content:end;
+    margin-bottom: 1rem;
+}
+
+.desktopmenu__items--button{
+    padding-right: 2rem;
+    
+}
+
 
 
             /*HERO*/
@@ -363,8 +392,8 @@ body{
 .wavedivider svg {
     position: relative;
     display: block;
-    width: calc(227% + 1.3px);
-    height: 163px;
+    width: calc(142% + 1.3px);
+    height: 95px;
 }
 
 .wavedivider .shape-fill {
@@ -594,7 +623,7 @@ body{
 
 .prices__card h4{
     font-size: .7rem;
-    padding-left: 3em;
+    text-align: center;
 }
 
 .prices__promos-card{
@@ -634,7 +663,7 @@ body{
 .prices__promos-card h4{
     font-size: .7rem;
     padding-top: 5em;
-    padding-left: 2.6em;
+    text-align: center;
 }
 
 
@@ -686,7 +715,7 @@ body{
 .prices__payment-methods h4{
     margin-top: 4em;
     font-size: .7rem;
-    padding-left: 3em;
+    padding: .2rem .5rem;
 }
 
 
@@ -743,7 +772,13 @@ body{
     transition: all 0.4s;
 }
 
-
+.youtube{
+    width: 90%;
+    min-height:12.5rem;
+    margin: 4rem 1rem;
+    border: 2px solid #4b979e;
+    border-radius: 1rem;
+}
 
 
 
@@ -825,57 +860,68 @@ footer{
 }
 
 .poweredBy{
-    font-size:.5rem ;
+    font-size:.5rem;
     color: #c0bbbb;
-    padding-left: 5.8rem;
+    padding-left: 6rem;
     padding-top: 1.8rem;
 }
 
 
-
-
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .wavedivider svg {
-        width: calc(142% + 1.3px);
-        height: 95px;
+@media screen and (min-width:480px){   
+    .header{
+        min-height: 13vh;
     }
+    .buttonmenu{
+        display: none;
+    }
+    .fa-solid.fa-xmark{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        width: 50%;
+        right: 0%;
+    }
+    .desktopmenu{
+        display:flex;
+        position: relative;
+        z-index: 2;
+        margin-right: 1.5rem;
+
+    }
+    .desktopmenu__items{
+        padding-right: 2rem;
+        color: #6c6294;
+        font-size: 1.1rem;
+    }
+    .desktopmenu__items:hover{
+        color: #433a69;
+    }
+
+    .desktopmenu__items--button{
+        border: 1px solid rgba(247, 242, 242, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        background-color: #9b31cc;
+        color: #faf3f3;
+        border-radius: 1.2rem;
+        opacity:.8;
+    }
+
+    .desktopmenu__items--button:hover{
+        background-color: #8a23b9;
+        font-size: 1.1rem;
+    }
+    .desktopmenu__items--button-text{
+        padding: .2rem;
+        padding-left: 1.8rem;
+        
+    }
+        
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and(min-width:600px){
+    
     
 
-    }
 
     
 
