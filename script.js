@@ -8,7 +8,5 @@ buttonmenu.addEventListener('click',()=>{
     dropdownmenu__navlist.classList.toggle('active')
 })
 
-const buttonclosemenu = document.querySelector('.buttonclosemenu')
-buttonclosemenu.addEventListener('click',()=>{
-buttonclosemenu.classList.toggle('.inactive')
-})
+
+
