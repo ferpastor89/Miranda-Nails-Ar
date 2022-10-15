@@ -936,9 +936,10 @@ footer{
     .hero__title{
         width: 65%;
         margin: 0 auto;
+        
     }
     .hero__title-h1{
-        padding-top: 3.1rem;
+        padding-top: 2.9rem;
         font-size: 8rem;
         line-height:7.1rem;
         color: #f1eeee;
@@ -1009,35 +1010,81 @@ footer{
     .grid-gallery__items {
         display: flex;
         align-items: center;
-        justify-content: center;
-      
-        
+        justify-content: center; 
         border-radius: 4px;
         transition: transform 0.3s ease-in-out;
-      
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-      }
-      
-      .grid-gallery__items:hover {
+    }
+    
+    .grid-gallery__items:hover {
         filter: opacity(0.9);
         transform: scale(1.04);
-      }
+    }
 
     .grid-gallery{
+        margin-top: 6rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
         grid-auto-rows: minmax(12.5rem, auto);
         gap: 1.25rem;
         padding: 1.25rem;
         grid-auto-flow: dense;
+        background-color: #83ccd1;
+    }
+
+    .grid-gallery__title{
+        font-family:'Bodoni Moda', serif;
+        font-size: 3.6rem;
+        color: #444040;
+        background:linear-gradient(to right, #8576a8, #86098a,  #8576a8);
+        padding-bottom: .1rem;
+        margin-bottom: 6rem;
+    }
+    .grid-gallery__footer{
+        font-family:'Bodoni Moda', serif;
+        font-size: 2.5rem;
+        line-height: 2rem;
+        color: #ececec;
+        background:linear-gradient(to right, #8576a8, #86098a,  #8576a8);
+        padding-bottom: .2rem;
+        padding-top:.3rem;
+    }
+    .fa-arrow-right-long{
+        padding-top: 2.4rem;
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+
+    #prices{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        grid-auto-rows: minmax(12.5rem, auto);
+        background: none;
+        width: 90%;
+    }
+    .prices__card{
+        background: url("img/backgroundPrices.jpg.jpg") ;
+    }
+    .prices__promos-card{
+        background: url("img/backgroundPrices.jpg.jpg") ;
+        margin-top: 10.2em;
+    }
+    .prices__payment-methods{
+        background: url("img/backgroundPrices.jpg.jpg") ;
+        margin-top: 6.5rem;
     }
 
     
 @media (min-width: 600px) {
     .wide {
     grid-column: span 2;
+    }
+
+    .xwide {
+        grid-column: span 4;
     }
   
     .tall {
