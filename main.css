@@ -507,11 +507,11 @@ body{
 .slider__title-box-h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 1.6rem;
+    font-size:2rem;
     color:#5a5656;
     display: inline;
-    padding-left: 1em;
-    padding-top: 5em;
+    padding-left: 1.4rem;
+    padding-bottom: 3rem;
 }
 
 .see-more{
@@ -720,8 +720,6 @@ body{
 
             /*ABOUT ME*/
 
-
-
 #aboutMe{
     width: 100%;
     background:url(/img/backgroundAboutme.jpg.jpg);
@@ -772,11 +770,30 @@ body{
 }
 
 .youtube{
-    width: 90%;
-    min-height:12.5rem;
     margin: 4rem 1rem;
-    border: 2px solid #4b979e;
-    border-radius: 1rem;
+    color: #4b4b4d;
+    min-height: 75vh;
+}
+
+.text__youtube-title{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+.text__youtube-p{
+    color: #5f5e63;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.2px;
+    padding-top: .8rem;
+    padding-bottom: 2.5rem;
+    
+}
+.video__youtube{
+    width: 90vw;
+    min-height: 35vh;
+    margin-bottom: 3rem;
 }
 
 
@@ -912,16 +929,21 @@ footer{
         font-size: 1.1rem;
         padding-top: .4rem;
     }
+    .desktopmenu__items a{
+        padding-top: .3rem;
+    }
     .desktopmenu__items:hover{
         color: #7c71be;
+        font-size: 1.2rem;
     }
 
     .desktopmenu__items--button{
-        padding: 4px 15px;
+        padding: .625rem 1.25rem;
         border: 1px solid rgba(247, 242, 242, 0.5);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         background-color: #9b31cc;
         color: #faf3f3;
+        font-weight: bold;
         border-radius: 1.2rem;
         opacity:.8;
     }
@@ -962,18 +984,22 @@ footer{
         letter-spacing: 1px;
         color: #83ccd1;
         background-color: #474343;
+        border-bottom-left-radius: .8rem;
+        border-top-right-radius: .8rem;
     }
 
     .shift__button-hero{
         position: relative;
         left: 43%;
         top: 20%;
+        font-size: 1.3rem;
+        padding: 1rem 1.25rem;
     }
     .shift__button-hero:hover{
         margin-top: 4rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         background-color: #8a23b9;
-        transition: all 0.2s;
+        transition: all 0.4s;
     }
 
     .wavedivider {
@@ -1016,6 +1042,8 @@ footer{
         display: none;
     }
 
+            /*GRID GALLERY DESKTOP*/
+
     .grid-gallery__items {
         display: flex;
         align-items: center;
@@ -1028,8 +1056,11 @@ footer{
     .grid-gallery__items img{
         border-radius: .5rem;
     }
+    .grid-gallery__items:first-child{
+        padding-top: 1rem;
+    }
     .grid-gallery__items:nth-child(2){
-        padding-top: 2rem;
+        padding-top: 2.3rem;
     }
     .grid-gallery__items:hover {
         filter: opacity(0.9);
@@ -1073,7 +1104,7 @@ footer{
 
     #prices{
         margin-top: 4rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2.3rem;
         display: flex;
         flex-direction: row;
         background: none;
@@ -1100,6 +1131,7 @@ footer{
         background: url("img/backgroundPrices.jpg.jpg") ;
         width: 40%;
         margin: 2rem;
+        margin-top: 2.8;
     }
     .prices__card:hover{
         transform: scale(1.04);
@@ -1155,9 +1187,76 @@ footer{
         font-size: 1.3rem;
     }
     
-.shift__button-aboutMe{
-    margin-left: 6rem;
-}
+
+    .shift__button-aboutMe{
+        position: relative;
+        left: 37.8%;
+        padding:1.25rem 1.25rem;
+        font-weight: bold;
+        background-color: #9b31cc;
+        transition: all 0.4s;
+    }
+    .shift__button-aboutMe:hover{
+        transform: scale(1.06);
+        background-color: #8a23b9;
+        transition: all 0.4s;
+    }
+    .youtube{
+        display: flex;
+        flex-direction: row-reverse;
+        width:80vw;
+        margin: 0 auto;
+        margin-bottom: 3.5rem;
+        margin-top: 3.5rem;
+    }
+    .text{
+        width: 35vw;
+        margin-top:4.1rem;
+    }
+    .text__youtube-title{
+
+    }
+    .text__youtube-p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 85%;
+    }
+
+    .video{
+        width: 45%;
+        position: relative;
+        right: 5%;
+        margin-top: 5rem;
+    }
+    .video__youtube{
+        min-height: 55vh;
+        border-radius: .85rem;
+    }
+    footer{
+        min-height: 60vh;
+    }
+    .container-icons{
+        display:inline-flex;
+        position: relative;
+        left: 45%;
+        
+    }
+    .copyright{
+        display: flex;
+        justify-content:flex-start;
+    }
+    .copyright__brand{
+        font-size: .9rem;
+        padding-left: .5rem;
+    }
+    .copyright__brand span{
+        font-size: .7rem;
+    }
+    .poweredBy{
+        font-size: .6rem;
+        padding-top: 2.3rem;
+    }
+    
 
 @media (min-width: 600px) {
     .wide {
@@ -1171,8 +1270,6 @@ footer{
     .tall {
     grid-row: span 2;
     }
-  }
-    
     
         
     
