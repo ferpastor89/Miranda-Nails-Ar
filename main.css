@@ -184,9 +184,6 @@ body{
     padding-top: .3rem;
 }
 
-.logo__img{
-    
-}
             /*MENU MOBILE*/
 
 .header{ 
@@ -272,8 +269,8 @@ body{
 }
 
 .dropdownmenu__icons a{
-    font-size: 2.3rem;
-    padding-right: 2rem;
+    font-size: 2.2rem;
+    padding-right: 1rem;
 }
 
 .lineitem{
@@ -303,7 +300,6 @@ body{
             /*HERO*/
 
 .hero{
-
     padding: 0 3.125rem;
     background: url(/img/hero2-jpg.jpg) fixed no-repeat 50% 50%; 
     min-height: 100vh;
@@ -345,7 +341,7 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.9375rem 1.25rem;
+    padding: 1rem 2.5rem;
     border-radius: 30px;
     border: 1px solid rgba(247, 242, 242, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -506,9 +502,9 @@ body{
     font-weight: 100;
     font-size:2rem;
     color:#5a5656;
-    display: inline;
-    padding-left: 1.4rem;
-    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
 
 #gallery-slider > ul.slider li:first-child{
@@ -772,13 +768,13 @@ body{
     min-height: 75vh;
 }
 
-.text__youtube-title{
+.youtube__text-title{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1rem;
     padding-bottom: 2rem;
 }
-.text__youtube-p{
+.youtube__text-title--p{
     color: #5f5e63;
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -817,38 +813,24 @@ footer{
     font-size: 1.5rem;
     text-align: center;
     color:#ffff;
-    padding-top: 2em;
+    padding-top: 2.5rem;
 }
 
 .container-icons{
     display:flex;
-    justify-content: space-evenly;
-    padding-top:1.5em;
-    font-size: 2.9rem;
-    color:rgb(52, 52, 177);
-    margin-bottom: 1.2em;
+    justify-content:center;
+    margin-top:2rem;
+    font-size: 2.2rem;
+    color:rgb(214, 214, 231);
+    margin-bottom: 2.5rem;
 }
-
-.fa-instagram{
-    background:linear-gradient(#515BD4, #8134af, #DD2A7B, #FEDA77, #F58529);
-    color: white;
-    border-radius: 30%;
-    border: 1px solid white;
-    
-}
-
 .fa-whatsapp{
-    background-color: rgb(49, 182, 49);
-    color: white;
-    border-radius: 60%;
-    border: 1px solid white;
+    padding-left: 1rem;
+    padding-right: .8rem;
 }
 
-.fa-facebook{
-    background-color: rgb(42, 100, 209);
-    color: white;
-    border-radius: 40%;
-    border: 1px solid white;
+.contact__navigationFooter-bar{
+    display: none;
 }
 
 .copyright{
@@ -889,7 +871,7 @@ footer{
         /*background:#bfc6cc;*/
         background:linear-gradient(to right, #e0e8ee,  #a6bfd4);
         width: 100%;
-        max-height: 8vh;
+        max-height: 10vh;
         padding: 0;
         position: fixed;
     }
@@ -982,21 +964,24 @@ footer{
         letter-spacing: 1px;
         color: #83ccd1;
         background-color: #474343;
-        border-bottom-left-radius: .8rem;
-        border-top-right-radius: .8rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-left: .6rem;
+       
     }
 
     .shift__button-hero{
         position: relative;
         left: 43%;
         top: 20%;
-        font-size: 1.3rem;
-        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem 2.7rem;
         transition: all 0.4s;
     }
     .shift__button-hero:hover{
         margin-top: 4rem;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         background-color: #8a23b9;
         transition: all 0.4s;
         transform: scale(1.06);
@@ -1017,10 +1002,7 @@ footer{
     }
     .social-proof__portrait{
         display: flex;
-        justify-content: flex-end;
-        position: relative;
-        right: 18%;
-        
+        justify-content:center;
     }
     .social-proof__portrait-img{
         width: 10%;
@@ -1029,10 +1011,11 @@ footer{
 
     .social-proof__name{
         display: flex;
-        justify-content: flex-end;
-        margin: 0 auto;
-        width: 72%;
+        justify-content: center;
+        position: relative;
+        right: 9%;
         padding-top: 0.3rem;
+        padding-bottom: 1rem;
         font-size: 1rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -1131,6 +1114,7 @@ footer{
         width: 40%;
         margin: 2rem;
         margin-top: 2.8;
+        padding: .5rem;
     }
     .prices__card:hover{
         transform: scale(1.04);
@@ -1142,8 +1126,8 @@ footer{
     .prices__payment-methods{
         background: url("img/backgroundPrices.jpg.jpg") ;
         width: 40%;
-        min-height: 71vh;
-        margin-top: 3.1rem;
+        min-height: 72vh;
+        margin-top: 3.5rem;
     }
     .prices__payment-methods:hover{
         transform: scale(1.04);
@@ -1152,15 +1136,19 @@ footer{
         padding-top: 3rem;
         padding-bottom: 2rem;
     }
+    .prices__payment-methods--button{
+        margin-bottom: 0;
+    }
     .prices__payment-methods--button:hover{
         filter: opacity(0.9);
         transform: scale(1.04);
     }
     .prices__payment-methods h4{
-        padding-bottom: 2rem;
+        padding-top: 0;
         padding-left: 1rem;
         padding-right: 1rem;
         font-size: .8rem;
+        
     }
     
     #aboutMe{
@@ -1190,7 +1178,7 @@ footer{
     .shift__button-aboutMe{
         position: relative;
         left: 37.8%;
-        padding:1.25rem 1.25rem;
+        padding:1rem 2.7rem;
         font-weight: bold;
         background-color: #9b31cc;
         transition: all 0.4s;
@@ -1208,15 +1196,17 @@ footer{
         margin-bottom: 3.5rem;
         margin-top: 3.5rem;
     }
-    .text{
+    .youtube__text{
         width: 35vw;
         margin-top:4.1rem;
     }
-    .text__youtube-title{
-
+    .youtube__text-title{
+        padding-top: 1rem;
+        padding-top: 5rem;
     }
-    .text__youtube-p{
-        font-size: 1.1rem;
+    .youtube__text-title--p{
+        padding-top: 0;
+        font-size: 1rem;
         line-height: 1.5rem;
         width: 85%;
     }
@@ -1235,25 +1225,69 @@ footer{
         min-height: 60vh;
     }
     .container-icons{
-        display:inline-flex;
-        position: relative;
-        left: 45%;
-        
+        display:flex;
+        justify-content:flex-start;
+        margin-left: 12.9rem;
+    }
+    .container-icons a:hover{
+        color: rgb(175, 170, 219);
+    }
+    .contact__title{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3rem;
+        margin-left: 12.8rem;
+        font-size: 2rem;
+    }
+    .fa-whatsapp{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .contact__ubicacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    .contact__navigationFooter-bar{
+        display: flex;
+        flex-direction: column;
+        margin-top:1.4rem;
+        margin-left: 2.2rem;
+    }
+    .contact__navigationFooter-bar li{
+        margin-top: 1rem;
+    }
+    .contact__navigationFooter-bar--items a{
+        font-size: 1rem;
+        font-weight: 100;
+        color: #d8d2d2;
+    }
+    .contact__navigationFooter-bar--items a:hover{
+        color:  #f8f4f4;
+    }
+    
+    .contact__ubicacion-map{
+        width: 35%;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
     }
     .copyright{
         display: flex;
-        justify-content:flex-start;
+        justify-content:center;
     }
     .copyright__brand{
-        font-size: .9rem;
+        font-size: .8rem;
         padding-left: .5rem;
     }
     .copyright__brand span{
-        font-size: .7rem;
+        font-size: .6rem;
     }
     .poweredBy{
         font-size: .6rem;
         padding-top: 2.3rem;
+        padding-left: 3rem;
     }
     
 
