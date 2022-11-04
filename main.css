@@ -790,15 +790,81 @@ footer{
 
        /* Media queries tablet version */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
+    body{
+        background-color: black;
+    }
+    .header{
+        max-height:8.5vh
+    }
+    .logo{
+        padding: .3rem;
+    }
+    .logo__img{
+        width: 50%;
+    }
+    .hero{
+        background: url(/img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
+        min-height: 100vh;
+        background-size:cover;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__title h1{
+        text-align: center;
+        padding-top: 0;
+        font-size: 8rem;
+        line-height:6.5rem;
+    }
+    .hero__subtitle{
+        text-align: center;
+    }
+    .hero__title-h2{
+        font-size: 1.7rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
+        /* Media query grid gallery sizes*/
 
+@media (min-width: 600px) {
+    .wide {
+    grid-column: span 2;
+    }
 
+    .xwide {
+        grid-column: span 4;
+    }
+
+    .tall {
+    grid-row: span 2;
+    }
+}
        /* Media queries desktop version */
 
 @media screen and (min-width:960px){   
-    .body{
+    body{
         width: 100%;
     }
 
@@ -1230,23 +1296,8 @@ footer{
         color: rgb(193, 224, 235);
     }
     
-
-@media (min-width: 600px) {
-    .wide {
-    grid-column: span 2;
-    }
-
-    .xwide {
-        grid-column: span 4;
-    }
-  
-    .tall {
-    grid-row: span 2;
-    }
-    
-        
-    
 }
+
     
     
 
