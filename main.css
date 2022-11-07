@@ -661,7 +661,7 @@ body{
     width: 70%;
     padding-left: 3em;
     font-family: 'Inter', sans-serif;
-    color:#5f5e63;;
+    color:#5f5e63;
     font-size: 1.2rem;
     letter-spacing: 1.4px;
     line-height: 1.9rem;
@@ -878,6 +878,29 @@ footer{
         border-right: 8px solid #86098a ;
         border-top: 2px solid #2f098a;
         border-left: 1px solid rgba(255, 166, 0, 0.411);
+    }
+    .cards{
+        background:linear-gradient(to right, rgb(155, 151, 173), rgb(102, 96, 131)) ;
+    }
+    .cards .prices__card,
+    .prices__promos-card,
+    .prices__payment-methods{
+        width: 65%;
+        /*background: linear-gradient(to left, rgb(51, 4, 4), black );*/
+        background:linear-gradient(to left, #e0e8ee,  #5d7a92);
+        border: none;
+    }
+    .cards li{
+        font-size: 1rem;
+        padding: 0 .8rem;
+        color: #323235;
+    }
+    .cards h2{
+        color: #431757;
+        font-weight: bold;
+    }
+    .cards h4{
+        color:#323235 ;
     }
     
 
