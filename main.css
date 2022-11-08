@@ -631,50 +631,42 @@ body{
             /*ABOUT ME*/
 
 #aboutMe{
-    width: 100%;
+    display: block;
+    flex-direction: column;
+    left: 50%;
+    padding:3rem 0;
     background:url(/img/backgroundAboutme.jpg.jpg);
     background-size: cover;
+    background-position: calc(78%);
+    background-repeat: no-repeat;
+    background-attachment: fixed
 }
 
 .aboutMe__title{
     padding-left: 1rem;
-    padding-top: 2.5em;
-    padding-bottom: 1.1em;
+    padding-bottom:2rem;
     font-size: 2.3rem;
     font-family:'Roboto', sans-serif;
-    color: #726a6a;
+    color: #444040;
     letter-spacing: 1.5px;
 }
 
-.aboutMe__text{
-    width: 70%;
-    padding-left: 3em;
-    font-family: 'Inter', sans-serif;
-    color:#5f5e63;;
-    font-size: 1.2rem;
-    letter-spacing: 1.4px;
-    line-height: 1.9rem;
-    padding-left: 1rem;
-}
-
+.aboutMe__text,
 .aboutMe__text-2{
     width: 70%;
-    padding-left: 3em;
     font-family: 'Inter', sans-serif;
-    color:#5f5e63;
+    color:#39393b;;
     font-size: 1.2rem;
     letter-spacing: 1.4px;
     line-height: 1.9rem;
     padding-left: 1rem;
-    padding-bottom: 2.5em;
 }
-
+.aboutMe__text-2{
+    padding-bottom: 2rem;
+}
 .shift__button-aboutMe{
-    display: inline-block;
-    margin-top: 1em;
-    margin-left: 7em;
-    margin-bottom: 4em;
-    position: relative;
+    width: 47%;
+    margin:auto;
     font-size: .9rem;
     font-weight: 400;
     text-align: center;
@@ -682,7 +674,7 @@ body{
     letter-spacing: 1.3px;
     text-decoration: none;
     text-transform: uppercase;
-    padding:0.9375rem 1.25rem;
+    padding:1.2rem 1.25rem;
     border-radius: 30px;
     border: 1px solid rgba(247, 242, 242, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -886,7 +878,6 @@ footer{
     .prices__promos-card,
     .prices__payment-methods{
         width: 65%;
-        /*background: linear-gradient(to left, rgb(51, 4, 4), black );*/
         background:linear-gradient(to left, #e0e8ee,  #5d7a92);
         border: none;
     }
@@ -902,6 +893,26 @@ footer{
     .cards h4{
         color:#323235 ;
     }
+    .aboutMe__title{
+        font-size: 2.3rem;
+        font-family:'Roboto', sans-serif;
+        color: #2b2a2e;
+        letter-spacing: 1.5px;
+    }
+    .aboutMe__text,
+    .aboutMe__text-2{
+        width: 45%;
+        padding-left: 1rem;
+        padding-right: .5rem;
+        color:#2b2a2e;
+    }
+    .shift__button-aboutMe{
+        margin-left: 2.1rem;
+        width: 30%;
+        padding:1.2rem 1.8rem;
+    }
+    
+    
     
 
 
@@ -933,11 +944,9 @@ footer{
     .wide {
     grid-column: span 2;
     }
-
     .xwide {
         grid-column: span 4;
     }
-
     .tall {
     grid-row: span 2;
     }
@@ -948,7 +957,6 @@ footer{
     body{
         width: 100%;
     }
-
     .header{
         background:linear-gradient(to right, #e0e8ee,  #a6bfd4);
         width: 100%;
@@ -956,21 +964,17 @@ footer{
         padding: 0;
         position: fixed;
     }
-
     .logo{
         width: 25%;
         padding: .8rem;
     }
-
     .logo__img{
         height: 2rem;
         margin-bottom: .8rem;
     }
-
     .buttonmenu{
         display: none;
     }
-    
     .menu{
         position: absolute;
         width: 50%;
@@ -982,7 +986,6 @@ footer{
         position: relative;
         z-index: 2;
         margin-right: 1.5rem;
-
     }
     .desktopmenu__items{
         padding-right: 2rem;
@@ -997,7 +1000,6 @@ footer{
         color: #7c71be;
         font-size: 1.2rem;
     }
-
     .desktopmenu__items--button{
         padding: .625rem 1.25rem;
         border: 1px solid rgba(247, 242, 242, 0.5);
@@ -1008,27 +1010,21 @@ footer{
         border-radius: 1.2rem;
         opacity:.8;
     }
-
     .desktopmenu__items--button:hover{
         background-color: #8a23b9;
         transform: scale(1.06);
     }
-
-
     .hero{
         background: url(/img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
         min-height: 100vh;
         background-size:cover;
     }
-
     .hero::before{
         background: rgba(60, 60, 85, 0.2)fixed no-repeat 50% 50%;
     }
-
     .hero__title{
         width: 65%;
         margin: 0 auto;
-        
     }
     .hero__title-h1{
         padding-top: 2.9rem;
@@ -1036,7 +1032,6 @@ footer{
         line-height:7.1rem;
         color: #f1eeee;
     }
-
     .hero__title-h2{
         display: inline-block;
         font-weight: 100;
@@ -1049,7 +1044,6 @@ footer{
         padding-right: .5rem;
         margin-left: .6rem;
     }
-
     .shift__button-hero{
         position: relative;
         left: 43%;
@@ -1065,30 +1059,25 @@ footer{
         background-color: #8a23b9;
         transform: scale(1.06);
     }
-
     .wavedivider {
         display: none;
     }
-
     .social-proof__text{
         width: 100%;
         padding-top: 5rem;
         font-size: 3.3rem;
         line-height: 3.5rem;
     }
-    
     .social-proof__portrait-img{
         width: 25%;
         padding-top: 2.5rem;
     }
-
     .social-proof__name{
         padding-top: 1rem;
         padding-bottom: 1rem;
         font-size: 1rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-
     #gallery-slider{
         display: none;
     }
@@ -1107,7 +1096,6 @@ footer{
         grid-auto-flow:dense;
         background:linear-gradient(to right, #cae5e7, #72b9be);
     }
-    
     .grid-gallery__items {
         display: flex;
         align-items: center;
@@ -1120,12 +1108,10 @@ footer{
     .grid-gallery__items img{
         border-radius: .5rem;
     }
-
     .grid-gallery__items:hover {
         filter: opacity(0.9);
         transform: scale(1.04);
     }
-
     .grid-gallery__title{
         font-family:'Bodoni Moda', serif;
         font-size: 3.6rem;
@@ -1146,7 +1132,6 @@ footer{
         padding-top:.3rem;
         margin-top: 2rem ;
         margin-bottom: 2rem;
-        
     }
     .fa-arrow-right-long{
         padding-top: .5rem;
@@ -1154,7 +1139,6 @@ footer{
         font-size: 2rem;
         color: whitesmoke;
     }
-
     #prices{
         margin-top: 4rem;
         margin-bottom: 4rem;
@@ -1175,7 +1159,6 @@ footer{
         padding-left:2rem;
         padding-right: 2rem;
     }
-
     .prices__card:hover{
         transform: scale(1.04);
     }
@@ -1189,7 +1172,6 @@ footer{
     .prices__payment-methods ul{
         padding-bottom: .7rem;
     }
-
     .prices__payment-methods h4{
         padding-top: 0;
         padding-bottom: 0;
@@ -1201,39 +1183,19 @@ footer{
     .prices__payment-methods:hover{
         transform: scale(1.04);
     }
-    
     #aboutMe{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
+        padding-top: 0;
         margin-top: 6rem;
         margin-bottom: 2rem;
         background-size:contain ;
-        background-position: calc(78%);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
     }
     .aboutMe__title{
-        width: 50%;
-        position: relative;
-        left: 22.5%;
-        padding-top: 0;
-        padding-bottom: 4rem;
+        width: 55%;
+        margin: auto;
         font-size: 2.3rem;
-        font-family:'Roboto', sans-serif;
         color: #726a6a;
-        letter-spacing: 1.5px;
     }
-    .aboutMe__text{
-        width: 35%;
-        margin-left: 11.5rem;
-        font-family: 'Inter', sans-serif;
-        color:#5f5e63;
-        font-size: 1.2rem;
-        text-align:left;
-    }
-
+    .aboutMe__text,
     .aboutMe__text-2{
         width: 35%;
         margin-left: 11.5rem;
@@ -1242,11 +1204,10 @@ footer{
         font-size: 1.2rem;
         text-align:left;
     }
-    
     .shift__button-aboutMe{
-        width:26%;
-        position:relative;
-        left: 11.6%;
+        position: relative;
+        right: 18%;
+        width:25%;
         padding:1rem 2.7rem;
         margin-bottom: 4rem;
         font-weight: bold;
@@ -1258,7 +1219,6 @@ footer{
         background-color: #8a23b9;
         transition: all 0.4s;
     }
-
     .linedivider-desktop{
         width:75%;
         margin: 0 auto;
@@ -1267,7 +1227,6 @@ footer{
         background:linear-gradient(to right, #86098a , #85768a , #2f098a);
         margin-bottom: 4rem;
     }
-    
     .youtube{
         display: flex;
         flex-direction: row-reverse;
@@ -1290,7 +1249,6 @@ footer{
         line-height: 1.5rem;
         width: 85%;
     }
-
     .video{
         width: 42%;
         position: relative;
@@ -1305,7 +1263,6 @@ footer{
     .contact{
         min-height: 30vh;
     }
-
     .contact__title{
         display: flex;
         justify-content: center;
@@ -1321,12 +1278,10 @@ footer{
     .container-icons a:hover{
         color: rgb(175, 170, 219);
     }
-    
     .fa-whatsapp{
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
-
     .contact__ubicacion{
         display: flex;
         flex-direction: row;
@@ -1350,7 +1305,6 @@ footer{
     .contact__navigationFooter-bar--items a:hover{
         color:  #f8f4f4;
     }
-    
     .contact__ubicacion-map{
         position: relative;
         right: 19.5%;
@@ -1376,7 +1330,6 @@ footer{
     .copyright__poweredBy:hover{
         color: rgb(193, 224, 235);
     }
-    
 }
 
     
