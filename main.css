@@ -905,60 +905,60 @@ footer{
         padding:1.2rem 1.8rem;
     }
     
-.youtube{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 50vh;
-}
+    .youtube{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 50vh;
+    }
 
-.youtube__text-title{
-    margin-top: .5rem;
-    color: #bdb5b5;
+    .youtube__text-title{
+        margin-top: .5rem;
+        color: #bdb5b5;
+    }
+    .youtube__text-title--p{
+        color: #bbbac2;
+        font-size: 1.1rem;
+    }
+    .video__youtube{
+        width: 90vw;
+        min-height: 40vh;
+        margin-bottom: 2rem;
+    }
+    .contact__title{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .contact__ubicacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: .5rem;
+    }
+    .contact__navigationFooter-bar{
+        display: flex;
+        justify-content:start;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 1rem;
+    }
+    .contact__navigationFooter-bar li{
+        margin-top: 1rem;
+    }
+    .contact__navigationFooter-bar--items a{
+        font-size: 1rem;
+        font-weight: 100;
+        color: #d8d2d2;
+    }
+    .contact__ubication-map{
+        margin-right:7rem;
+        width: 100%;
+    }
+    .copyright__poweredBy{
+        padding-right: .8rem;
+    }
 }
-.youtube__text-title--p{
-    color: #bbbac2;
-    font-size: 1.1rem;
-}
-.video__youtube{
-    width: 90vw;
-    min-height: 40vh;
-    margin-bottom: 2rem;
-}
-.contact__title{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-.contact__ubicacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: .5rem;
-}
-.contact__navigationFooter-bar{
-    display: flex;
-    justify-content:start;
-    flex-direction: column;
-    padding-left: 0;
-    padding-right: 1rem;
-}
-.contact__navigationFooter-bar li{
-    margin-top: 1rem;
-}
-.contact__navigationFooter-bar--items a{
-    font-size: 1rem;
-    font-weight: 100;
-    color: #d8d2d2;
-}
-.contact__ubication-map{
-    margin-right:7rem;
-    width: 100%;
-}
-.copyright__poweredBy{
-    padding-right: .8rem;
-}
-
         /* Media query grid gallery sizes*/
 
 @media (min-width: 600px) {
@@ -1346,10 +1346,3 @@ footer{
         color: rgb(193, 224, 235);
     }
 }
-
-    
-    
-
-
-    
-
