@@ -1251,31 +1251,35 @@ footer{
     .youtube{
         display: flex;
         flex-direction: row-reverse;
-        width:80vw;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
+        /*width:80vw;
         margin: 0 auto;
         margin-bottom: 3.5rem;
-        margin-top: 3.5rem;
+        margin-top: 3.5rem;*/
     }
     .youtube__text{
         width: 35vw;
-        margin-top:4.1rem;
+        padding-left: 3.9rem;
     }
     .youtube__text-title{
-        padding-top: 1rem;
-        padding-top: 5rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        padding-left: 0;
     }
     .youtube__text-title--p{
-        padding-top: 0;
         font-size: 1rem;
         line-height: 1.5rem;
         width: 85%;
     }
     .video{
-        width: 42%;
-        position: relative;
+        width: 37%;
+        padding-right: 2rem;
+        /*position: relative;
         right: 4%;
         margin-top: 5rem;
-        margin-right: 2.5rem;
+        margin-right: 2.5rem;*/
     }
     .video__youtube{
         min-height: 55vh;
