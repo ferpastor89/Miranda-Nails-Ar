@@ -902,6 +902,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         min-height: 50vh;
     }
 
@@ -914,7 +915,7 @@ footer{
         font-size: 1.1rem;
     }
     .video__youtube{
-        width: 90vw;
+        width: 95vw;
         min-height: 40vh;
         margin-bottom: 2rem;
     }
@@ -1285,12 +1286,12 @@ footer{
         min-height: 30vh;
     }
     .contact__title{
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         margin-bottom: 1rem;
         font-size: 2.2rem;
     }
     .container-icons a:hover{
-        color: rgb(175, 170, 219);
+        color: rgb(146, 141, 197);
     }
     .fa-whatsapp{
         margin-left: 1.5rem;
@@ -1305,8 +1306,9 @@ footer{
     .contact__navigationFooter-bar{
         display: flex;
         flex-direction: column;
-        justify-content: baseline;
-        padding-left: 7rem;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10rem;
     }
     .contact__navigationFooter-bar--items-faq{
         pointer-events: none;
