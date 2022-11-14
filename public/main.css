@@ -504,7 +504,7 @@ body{
 
         /*Prices/Promos/Payment methods*/
 
-.cards{
+#prices{
     background: url(./img/backgroundprices.jpg) ;
     background-size: cover;
     backdrop-filter:blur(.4rem);
