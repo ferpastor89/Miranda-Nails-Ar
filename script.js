@@ -1,6 +1,3 @@
-
-
-/*Cuando hago CLICK .button, .nav TOOGLE 'activo'*/
 const buttonmenu = document.querySelector('.buttonmenu')
 const dropdownmenu__navlist = document.querySelector('.dropdownmenu__navlist')
 
