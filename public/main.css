@@ -504,10 +504,9 @@ body{
 
         /*Prices/Promos/Payment methods*/
 
-#prices{
-    background: url(./img/backgroundprices.jpg) ;
-}
+
 .cards{
+    background: url(./img/backgroundprices.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter:blur(.4rem);
