@@ -147,7 +147,6 @@ body{
     line-height: 2.5rem;
     letter-spacing: 1px;
     color: #83ccd1;
-
 }
 
 .logo{
@@ -252,9 +251,9 @@ body{
 
             /*HERO*/
 
-.hero__img{
+.hero{
     padding: 0 3.125rem;
-    background: fixed no-repeat 50% 50%; 
+    background: url("/public/img/hero2.jpg") fixed no-repeat 50% 50%; 
     min-height: 100vh;
     background-size:cover;
     background-position: center;
@@ -507,7 +506,7 @@ body{
         /*Prices/Promos/Payment methods*/
 
 .cards{
-    background: url("/public/img/backgroundPrices.jpg.jpg") ;
+    background: url("/public/img/backgroundprices.jpg") ;
     background-size: cover;
     backdrop-filter:blur(.4rem);
     min-height: 70vh;
@@ -584,7 +583,7 @@ body{
     flex-direction: column;
     left: 50%;
     padding:3rem 0;
-    background:url(/public/img/backgroundAboutme.jpg.jpg);
+    background:url(/public/img/backgroundaboutme.jpg);
     background-size: cover;
     background-position: calc(78%);
     background-repeat: no-repeat;
