@@ -121,7 +121,6 @@
     backdrop-filter: blur (1rem);
     background-color: rgba(255, 255, 255, 0.060);
     color:#dfd7d7;
-    margin: 0 auto;
 }
 
 body{
@@ -511,14 +510,14 @@ body{
     background-repeat: no-repeat;
     backdrop-filter:blur(.4rem);
     min-height: 70vh;
-}
-.cards{
-    
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     margin: auto;
+}
+.cards{
+    
 }
 
 .cards h2{
