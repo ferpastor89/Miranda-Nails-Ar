@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "C/:Users/Fernando/Desktop/Miranda Nails/Versión final/firebase.json",
     "ignore": [
       "firebase.json",
       "**/.*",
