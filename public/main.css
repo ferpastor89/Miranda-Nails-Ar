@@ -252,9 +252,9 @@ body{
 
             /*HERO*/
 
-.hero{
+.hero__img{
     padding: 0 3.125rem;
-    background: url(/img/hero2-jpg.jpg) fixed no-repeat 50% 50%; 
+    background: fixed no-repeat 50% 50%; 
     min-height: 100vh;
     background-size:cover;
     background-position: center;
@@ -507,7 +507,7 @@ body{
         /*Prices/Promos/Payment methods*/
 
 .cards{
-    background: url("img/backgroundPrices.jpg.jpg") ;
+    background: url("/public/img/backgroundPrices.jpg.jpg") ;
     background-size: cover;
     backdrop-filter:blur(.4rem);
     min-height: 70vh;
@@ -584,7 +584,7 @@ body{
     flex-direction: column;
     left: 50%;
     padding:3rem 0;
-    background:url(/img/backgroundAboutme.jpg.jpg);
+    background:url(/public/img/backgroundAboutme.jpg.jpg);
     background-size: cover;
     background-position: calc(78%);
     background-repeat: no-repeat;
@@ -744,7 +744,7 @@ footer{
         width: 60%;
     }
     .hero{
-        background: url(/img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
+        background: url(/public/img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
         min-height: 100vh;
         background-size:cover;
         width: 100%;
@@ -1004,7 +1004,7 @@ footer{
         transform: scale(1.06);
     }
     .hero{
-        background: url(/img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
+        background: url(/public/img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
         min-height: 100vh;
         background-size:cover;
     }
