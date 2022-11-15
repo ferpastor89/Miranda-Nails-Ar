@@ -252,7 +252,7 @@ body{
 
 .hero{
     padding: 0 3.125rem;
-    background: url(./img/hero2.jpg) fixed no-repeat 50% 50%; 
+    background: url(./img/hero2.jpg)fixed no-repeat 50% 50%; 
     min-height: 100vh;
     background-size:cover;
     background-position: center;
@@ -511,7 +511,7 @@ body{
     min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     margin: auto;
 }
@@ -543,25 +543,25 @@ body{
     padding: 1rem;
 }
 
-.prices__card{
+.cards__prices{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.prices__promos-card{
+.cards__promos{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.prices__payment-methods{
+.cards__payment-methods{
     margin-bottom: 3rem;
 }
-.prices__payment-methods li{
+.cards__payment-methods li{
     text-align: center;
     font-size: 1.2rem;
 }
-.prices__payment-methods--button{
+.cards__payment-methods--button{
     width: 50%;
     font-size: 1em;
     padding: 1rem .1rem;
@@ -821,9 +821,9 @@ footer{
     .cards{
         background:linear-gradient(to right, rgb(155, 151, 173), rgb(102, 96, 131)) ;
     }
-    .cards .prices__card,
-    .prices__promos-card,
-    .prices__payment-methods{
+    .cards__prices,
+    .cards__promos,
+    .cards__payment-methods{
         width: 65%;
         background:linear-gradient(to left, #e0e8ee,  #5d7a92);
         border: none;
@@ -1127,11 +1127,7 @@ footer{
         font-size: 2rem;
         color: whitesmoke;
     }
-    #prices{
-        /*background: none;*/
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-    }
+    
     .bgD{
         background:linear-gradient(to right,#36363f, #20203a) ;
     }
@@ -1148,28 +1144,28 @@ footer{
         padding-left:2rem;
         padding-right: 2rem;
     }
-    .prices__card:hover{
+    .cards__prices:hover{
         transform: scale(1.04);
     }
-    .prices__promos-card:hover{
+    .cards__promos:hover{
         transform: scale(1.04);
     }
-    .prices__payment-methods{
+    .cards__payment-methods{
         height: 20.3rem;
         margin-bottom: 0;
     }
-    .prices__payment-methods ul{
+    .cards__payment-methods ul{
         padding-bottom: .7rem;
     }
-    .prices__payment-methods h4{
+    .cards__payment-methods h4{
         padding-top: 0;
         padding-bottom: 0;
     }
-    .prices__payment-methods--button:hover{
+    .cards__payment-methods--button:hover{
         filter: opacity(0.9);
         transform: scale(1.04);
     }
-    .prices__payment-methods:hover{
+    .cards__payment-methods:hover{
         transform: scale(1.04);
     }
     #aboutMe{
