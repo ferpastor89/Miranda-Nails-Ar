@@ -252,7 +252,7 @@ body{
 
 .hero{
     padding: 0 3.125rem;
-    background-image: url(./img/hero2.jpg) fixed no-repeat 50% 50%; 
+    background: url(./img/hero2.jpg) fixed no-repeat 50% 50%; 
     min-height: 100vh;
     background-size:cover;
     background-position: center;
@@ -274,7 +274,6 @@ body{
     min-height: 100%;
     display: flex;
     padding-top: 6rem;
-    
 }
 
 .hero__title{
@@ -504,7 +503,7 @@ body{
 
         /*Prices/Promos/Payment methods*/
 
-#prices{
+.cards{
     background: url(./img/backgroundprices.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,9 +514,6 @@ body{
     justify-content:center;
     align-items: center;
     margin: auto;
-}
-.cards{
-    
 }
 
 .cards h2{
@@ -747,7 +743,7 @@ footer{
         width: 60%;
     }
     .hero{
-        background-image: url(./img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
+        background: url(./img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
         min-height: 100vh;
         background-size:cover;
         width: 100%;
@@ -1007,7 +1003,7 @@ footer{
         transform: scale(1.06);
     }
     .hero{
-        background-image:url(./img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
+        background:url(./img/herobgdesktop.jpg) fixed no-repeat 50% 50%; 
         min-height: 100vh;
         background-size:cover;
     }
