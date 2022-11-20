@@ -1,17 +1,19 @@
 Miranda Nails art
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+
+
+![Imagen del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO1.png?raw=true)
 
 ## Ejemplo en vivo
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
-- [URL-de-la-api](URL-de-la-api)
+- https://ferpastor89.github.io/mirandanailsar.github.io/
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Este es un proyecto que realicé para una clienta que necesitaba una landing page para su emprendimiento de belleza de uñas.
+Fue mi primer página, por lo tanto traté que sea simple pero a la vez eficiente, que cumpliera con el propósito de llevar más clientas al emprendimiento mediante una página en la cuál se muestran imágenes de sus trabajos, que fuese responsive, se detallen precios/servicios, y se hable un poco de ella y la forma en que lleva adelante éste proyecto.
 
-## ¿Qué he aprendido en este proyecto? 🙇🏻 
+## ¿Qué aprendí en éste proyecto? 🙇🏻 
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Este proyecto me enseñó que menos es más, sobretodo cuando estamos empezando. Que es muy importante mantener una buena comunicación con el cliente, clara y concisa y que tanto UX como UI son funadamentales a la hora de diseñar un proyecto desde cero.
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
@@ -20,40 +22,35 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
 
 ## Vista previa del proyecto
-Si quieres hechas un vistazo al proyecto, te recomiendo:
+Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
+##### Desktop version
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO2%20(2).png?raw=true)
+
+
+![Captura del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO3.png?raw=true)
+
+
+![Captura del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO4.png?raw=true)
+
 
 ## Autor ✒️
-**TU NOMBRE**
+**FERNANDO PASTOR**
 
-* [micorreo@midominio.com](micorreo@midominio.com)
-* [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/)
-* [Behance](https://www.behance.net/tu-url-de-behance)
-* [Dribble](https://www.dribble.com/tu-url-de-dribble)
-* [Porfolio web](https://tu-dominio.com/)
+* fernandoandres.pastor@gmail.com
+* https://www.linkedin.com/in/fernando-pastor-240173246/
+
+
 
 ## Instalación 
-Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
+Este proyecto no necesita de instalación. Simplemente abrí la carpeta o hacé doble click en el .html
   
 ## Licencia 📄
 MIT Public License v3.0
-No puede usarse comencialmente.
+No puede usarse comercialmente.
 Footer
 © 2022 GitHub, Inc.
 Footer navigation
 
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
+   
 
