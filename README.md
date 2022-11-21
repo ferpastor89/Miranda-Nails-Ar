@@ -13,7 +13,7 @@ Fue mi primer página, por lo tanto traté que sea simple pero a la vez eficient
 
 ## ¿Qué aprendí en éste proyecto? 🙇🏻 
 
-Este proyecto me enseñó que menos es más, sobretodo cuando estamos empezando. Que es muy importante mantener una buena comunicación con el cliente, clara y concisa y que tanto UX como UI son funadamentales a la hora de diseñar un proyecto desde cero.
+Este proyecto me enseñó que menos es más, sobretodo cuando estamos empezando. Que es muy importante mantener una buena comunicación con el cliente, clara y concisa y que tanto UX como UI son fundamentales a la hora de diseñar un proyecto desde cero.
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
